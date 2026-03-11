@@ -4,9 +4,9 @@
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name VIMA MD",
-    "stop": "pm2 stop VIMA MD",
-    "restart": "pm2 restart VIMA MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name \"VIMA MD\"",
+    "stop": "pm2 stop \"VIMA MD\"",
+    "restart": "pm2 restart \"VIMA MD\""
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.6.0",
