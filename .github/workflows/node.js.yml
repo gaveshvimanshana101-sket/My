@@ -22,5 +22,5 @@ jobs:
       - name: Install modules
         run: npm install
 
-      - name: Strt bot
+      - name: Strat bot
         run: node index.js
