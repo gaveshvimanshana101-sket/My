@@ -1,24 +1,26 @@
-name: WhatsApp Bot
+name: Run WhatsApp Bot
 
 on:
+  workflow_dispatch:
   push:
-    branches: ["main"]
+    branches:
+      - main
 
 jobs:
-  build:
+  run-bot:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: [20x]
+          node-version: 20
 
-      - name: Install Dependencies
+      - name: Install modules
         run: npm install
 
-      - name: Start Bot
+      - name: Start bot
         run: node index.js
